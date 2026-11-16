@@ -1,38 +1,65 @@
 # Café Aroma Andino — Actividad 4 (Electiva I: Diseño de aplicaciones web)
 
-Sitio web de 5 páginas (Inicio, Menú, Nosotros, Reservas, Contacto) programado a partir del wireframe de la Actividad 2.
-Tecnologías: HTML5, CSS3, JavaScript, Bootstrap 5.3 y Bootstrap Icons. Node.js se usa para generar las páginas (`build.js`).
+Café Aroma Andino es un sitio web diseñado para presentar una cafetería, dar a conocer sus productos y ofrecer a los visitantes una experiencia de navegación sencilla, agradable e intuitiva.
 
-## Estructura
-- `index.html`, `menu.html`, `nosotros.html`, `reservas.html`, `contacto.html`: páginas generadas con `node build.js`
-- `build.js`: plantilla compartida (encabezado y pie) + contenido de cada página
-- `css/styles.css`: paleta cálida (café, caramelo, crema, verde), tipografía y componentes propios
-- `js/main.js`: filtros del menú, validación y confirmación de reservas y de contacto (guarda en `localStorage`)
-- `vendor/`: Bootstrap e iconos copiados desde `node_modules` (el sitio funciona sin internet, salvo el mapa)
+El sitio permite conocer la identidad del establecimiento, explorar su menú, consultar información sobre la cafetería y acceder a las secciones de reservas y contacto.
 
-## Cómo ejecutarlo
-1. `npm install` (solo si quieres regenerar `vendor/`).
-2. Edita el contenido en `build.js` y ejecuta `node build.js`.
-3. Abre `index.html` en el navegador.
+## Funcionalidades principales
+- Inicio: presentación general de Café Aroma Andino.
+- Menú: visualización de los productos ofrecidos por la cafetería.
+- Nosotros: información sobre la identidad y propuesta del establecimiento.
+- Reservas: sección destinada a consultar y gestionar solicitudes de reserva.
+- Contacto: espacio para facilitar la comunicación con los visitantes.
 
-## Publicar gratis en GitHub Pages
-Ya tienes cuenta y usaste Pages en la Actividad 2.
-1. Crea el repositorio `cafe-aroma-andino` en GitHub (público).
-2. En esta carpeta: `git init`, `git add .`, `git commit -m "Sitio Café Aroma Andino"`,
-   `git branch -M main`, `git remote add origin https://github.com/franksoftware473/cafe-aroma-andino.git`, `git push -u origin main`.
-3. En GitHub: Settings → Pages → Source: *Deploy from a branch* → `main` / `(root)` → Save.
-4. En 1–2 minutos el sitio queda en `https://franksoftware473.github.io/cafe-aroma-andino/`. Ese es el enlace a entregar.
-Alternativas gratuitas: Netlify (arrastrar la carpeta) o Cloudflare Pages.
+## Instrucciones de uso
+Para visualizar el proyecto, se deben seguir los siguientes pasos
+1. Instalar Node.js
+- Descargar e instalar Node.js desde su página oficial:https://nodejs.org/
+- Se recomienda instalar la versión LTS.
+  
+2. Descarga el proyecto
+- Ingresar al repositorio de GitHub.
+- Descargar el proyecto como archivo ZIP.
+- Extraer la carpeta en el computador.
 
-## Guion sugerido para el video (4–6 min)
-1. (0:30) Presentación: nombre, materia, cliente ficticio y objetivo del sitio (reservas en línea).
-2. (0:45) Del wireframe al sitio: mostrar la Actividad 2 y cómo se conservó la estructura (encabezado, retículas, pie de página).
-3. (1:30) Código: carpeta del proyecto, Bootstrap (grid, navbar, formularios), `styles.css` (paleta) y `build.js` (por qué se usa Node.js).
-4. (1:00) JavaScript: filtros del menú y validación de los formularios.
-5. (1:00) Recorrido del sitio publicado: las 5 páginas, probar una reserva y la vista en celular.
-6. (0:30) Hosting: cómo se publicó en GitHub Pages y conclusiones.
+3. Abrir el proyecto
+- Abrir Visual Studio Code.
+- Seleccionar la opción Archivo → Abrir carpeta.
+- Buscar y abrir la carpeta del proyecto Café Aroma Andino.
 
-## Antes de entregar
-- Los precios, la dirección, el teléfono y los nombres del equipo son **ficticios** (el cliente es imaginario); cámbialos si tu grupo definió otros.
-- Si el grupo tiene fotos propias del local o de los productos, ponlas en `img/` y reemplaza los bloques ilustrados.
-- Agrega los nombres de los integrantes del grupo en el pie de página (`build.js`).
+4. Ejecutar el servidor local
+- Abrir la terminal integrada de Visual Studio Code.
+- Verificar que la terminal esté ubicada en la carpeta donde se encuentra index.html.
+- Ejecutar el siguiente comando: npx http-server . -p 8080
+- Si solicita instalar el paquete http-server, aceptar la instalación.
+
+5. Visualizar el sitio web
+- Abrir Google Chrome o cualquier navegador e ingresar a: http://localhost:8080
+- De esta manera se podrá navegar por las diferentes secciones del sitio web.
+
+6. Finalizar la ejecución
+- Para detener el servidor local, regresar a la terminal y presionar: Ctrl + C
+
+
+## Tecnologías utilizadas
+1. HTML5: estructura del sitio web.
+2. CSS3: diseño y estilos visuales.
+3. JavaScript: interactividad y funcionalidades.
+4. Bootstrap: componentes y diseño adaptable.
+5. Bootstrap Icons: elementos gráficos e iconografía.
+
+
+## estructura del proyecto
+1. index.html: página principal.
+2. menu.html: página del menú.
+3. nosotros.html: información de la cafetería.
+4. reservas.html: sección de reservas.
+5. contacto.html: página de contacto.
+6. css/: archivos de estilos.
+7. js/: archivos JavaScript.
+8. img/: imágenes del proyecto.
+9. vendor/: recursos y bibliotecas externas.
+
+## Autor 
+- Proyecto académico y de desarrollo web: Café Aroma Andino.
+
